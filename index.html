@@ -11,7 +11,7 @@
       mode: "cors"
     };
 
-    fetch('https://api.render.com/v1/services/srv-cknvk8ea02is73c64htg/deploys?limit=1', options)
+    fetch('https://api.render.com/v1/services/srv-cknvk8ea02is73c64htg/deploys', options)
       .then(response => response.json())
       .then(response => console.log(response))
       .catch(err => console.error(err));
